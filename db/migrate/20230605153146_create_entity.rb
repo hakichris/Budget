@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateEntity < ActiveRecord::Migration[7.0]
   def change
     create_table :entities do |t|
@@ -5,7 +7,6 @@ class CreateEntity < ActiveRecord::Migration[7.0]
       t.integer :amount
       t.references :author, null: false, foreign_key: { to_table: :users }, index: true
       t.timestamps
-
     end
   end
 end
