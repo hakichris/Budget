@@ -46,6 +46,8 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 
 gem 'letter_opener'
 
+gem 'cloudinary'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
