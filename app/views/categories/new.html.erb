@@ -1,0 +1,23 @@
+<nav class="header">
+  <p>Create new category</p>
+  </div>
+  
+</nav>
+<div class="container">
+<div class="sign_in_fields">
+<%= form_with model: @category, url: user_categories_path do |form| %>
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div class="field">
+    <%= form.label :icon %>
+    <%= form.file_field :icon %>
+  </div>
+  <div class="actions">
+    <%= form.submit %>
+  <a href="<%= users_path %>"><button class="page-btns"> Back </button></a>
+  </div>
+<% end %>
+</div>
+</div>

@@ -1,0 +1,19 @@
+<nav class="header">
+  <p>Create new Transaction</p>
+  </div>
+<div class="container">
+  <%= form_with model: [current_user, @category, FinancialTransaction.new], url: user_category_financial_transactions_path(current_user, @category) do |form| %>
+    <div class="sign_in_holder">
+      <div class="sign_in_fields">
+        <%= form.text_field :name, placeholder: 'Name', required: true %>
+        <%= form.number_field :amount, step: :any, required: true, placeholder: 'Amount' %>
+        <%= form.collection_select :category_id, @current_user.categories, :id, :name, { prompt: 'Select a category' }, required: true %>
+      </div>
+      <div class="actions">
+    <%= form.submit "Save transaction"%>
+  <a href="<%= user_category_financial_transactions_path %>"><button class="page-btns">Back</button></a>
+  </div>
+    </div>
+  <% end %>
+</div>
+  

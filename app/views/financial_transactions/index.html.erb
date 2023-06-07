@@ -1,0 +1,37 @@
+<div class="group_holder">
+  <div class="group_card">
+    <div class="card_element">
+      <div class="picture_holder">
+      <p class="Image_icon"><%= image_tag @category.icon %></p>
+      </div>
+      <div class="name_holder">
+        <h5 class="category_name">
+          <%=@category.name%>
+        </h5>
+        <p class="detail_description">A financial transaction is an agreement, or communication, between a buyer and seller to exchange goods, services, or assets for payment.</p>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <% @financial_transaction.each do |transact| %>
+        <div class="transaction">
+          <p>Transaction No <%=transact.id%></p>
+          <div class="transaction_detail">
+            <p><%=transact.created_at.strftime('%d %B %Y')%></p>
+            <p>$<%=transact.amount%></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <hr>
+    <div class="total_transaction">
+      <h5 class="total_font">TOTAL PAYMENT</h5>
+      <h5 class="total_font">$<%=number_with_delimiter(@category.total(@category.id))%></h5>
+    </div>
+  </div>
+</div>
+<div class="navigation_link">
+<button class= "page-btns" ><%= link_to 'Create New Transaction', new_user_category_financial_transaction_path(current_user,@category)%></button>
+  <a href="<%= users_path %>"><button class="page-btns"> Back </button></a>
+</div>
+</div>
