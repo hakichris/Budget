@@ -27,7 +27,7 @@
 
 # 📖 Budget <a name="about-project"></a>
 
-## Ia mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what
+## A mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what. Note: it is only made for mobile screen, if you are using laptop screen, Kindly shrink it for better view and interaction. thanks!
 
   <ul>
     <li>View Budget for the logged in user </li>
@@ -64,7 +64,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://hakichris.github.io/TO-DO-LIST.github.io/)
+- [Live Demo Link](https://budget-app-l98w.onrender.com)
 
 ## Getting Started
 
