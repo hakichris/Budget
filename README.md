@@ -85,8 +85,8 @@ Clone this repository to your desired folder:
 
 ```sh
 
-  git clone git@github.com:mohisa302/Recipe-app.git
-   cd Recipe-app
+  git https://github.com/hakichris/Budget.git
+   cd Budget
 ```
 
 ### Install
@@ -94,7 +94,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd Recipe-app
+  cd Budget
 
   bundle install
 ```
