@@ -1,6 +1,6 @@
 <% if user_signed_in? %> 
- <div class="welcome container"> Welcome, <%= @user.name %> </div> 
- <div class="container">
+<div class="container">
+ <div class="welcome"> Welcome, <%= @user.name %> </div> 
  <% if @categories.empty? %>
  <h2>Please add some category</h2>
  <% else %>
@@ -9,10 +9,13 @@
    <li class="category-list-items">
      <%= link_to user_category_financial_transactions_path(current_user, category.id) do %>
      <div class="category-items-details">
-     <p class="Image_icon"><%= image_tag category.icon %></p>
+     <p class="Image"><%= image_tag category.icon %></p>
+     <div class="time-description">
        <div class="category_description">
          <h2><%= category.name%></h2>
          <p><%= category.total(category.id)%></p>
+        </div>
+        <p><%=category.created_at.strftime('%d %B %Y')%></p>
         </div>
      </div>
      <% end %> 

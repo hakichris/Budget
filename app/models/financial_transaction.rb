@@ -4,4 +4,5 @@ class FinancialTransaction < ApplicationRecord
   has_many :categories, through: :cat_transacts
 
   validates :name, presence: true, length: { maximum: 250 }
+  validates :amount, presence: true
 end

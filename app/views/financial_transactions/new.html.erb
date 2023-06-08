@@ -1,7 +1,9 @@
+
+<div class="container">
 <nav class="header">
   <p>Create new Transaction</p>
-  </div>
-<div class="container">
+  </nav>
+
   <%= form_with model: [current_user, @category, FinancialTransaction.new], url: user_category_financial_transactions_path(current_user, @category) do |form| %>
     <div class="sign_in_holder">
       <div class="sign_in_fields">

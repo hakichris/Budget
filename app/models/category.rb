@@ -9,8 +9,4 @@ class Category < ApplicationRecord
   def total(category_id)
     financial_transactions.joins(:cat_transacts).where(cat_transacts: { category_id: }).sum('financial_transactions.amount')
   end
-
-  def owner?(user)
-    self.user == user
-  end
 end
