@@ -247,7 +247,7 @@
 
   .category_description {
     display: flex;
-    width: 60vw;
+    width: 75vw;
     justify-content: space-between;
     align-items: center;
   }
