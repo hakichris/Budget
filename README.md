@@ -3,7 +3,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Recipe App\] ](#-recipe-app-)
+- [📖 \[Budget\] ](#-Budget-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -24,16 +24,14 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Recipe <a name="about-project"></a>
+# 📖 Budget <a name="about-project"></a>
 
-## If making it to the Guinness book of world records sounds exciting to you, then The Recipe app provides a comprehensive solution for managing your secret recipes, ingredients, and inventory. You can save ingredients and track what you have on hand, create recipes, and generate a shopping list based on what you need for a recipe and even track your cooking time. Additionally, the app allows you to make your recipes public, facilitating easy sharing with others who may find them useful in their own cooking endeavors
+## Ia mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what
 
   <ul>
-    <li>View Recipes for the logged in user </li>
-    <li>logged in user can delete their recipes</li>
-    <li>Logged in user can add new recipes</li>   
-    <li>Logged in user can make the recipe public or private</li> 
-    <li>Public recipes can be viewed by any user</li>
+    <li>View Budget for the logged in user </li>
+    <li>logged in user can create their categories</li>
+    <li>Logged in user can add new transaction</li>   
   </ul>
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -58,10 +56,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Add new recipes**
-- **Delete recipes**
-- **Make recipe public or private**
-- **generate shopping list for missing ingredients in the inventory**
+- **Add new categories**
+- **create categories**
+- **create transaction**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Getting Started
@@ -146,10 +143,9 @@ rails db:seed RAILS_ENV=test
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **list categories**
-- [ ] **Create category**
-- [ ] **List transactions**
-- [ ] **create transactions**
+- [ ] **list expenses and names**
+- [ ] **show amount spend on expenses**
+- [ ] **list shopping list**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
