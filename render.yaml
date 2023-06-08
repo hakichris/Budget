@@ -1,13 +1,11 @@
 databases:
   - name: mybudget
-  ipAllowList: []
-   
-
+    ipAllowList: []
 services:
   - type: web
     name: rails
     runtime: ruby
-    buildCommand: "./bin/render-build.sh"
+    buildCommand: ./bin/render-build.sh
     startCommand: bundle exec rails s
     envVars:
       - key: DATABASE_URL
