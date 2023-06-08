@@ -63,7 +63,8 @@ config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present? || 
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
-
+  config.read_encrypted_secrets = true   
+  config.secret_key_base = '4bff655dbd390cf2fe3d33dec4dabab8'
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "Budget_production"
