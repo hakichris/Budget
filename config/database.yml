@@ -20,7 +20,7 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-   database: <%= ENV["BUDGET_DATABASE_NAME"] %>
+  database: <%= ENV["BUDGET_DATABASE_NAME"] %>
   username: <%= ENV["BUDGET_DATABASE_USERNAME"] %>
   password: <%= ENV["BUDGET_DATABASE_PASSWORD"] %>
 
