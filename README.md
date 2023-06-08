@@ -146,11 +146,10 @@ rails db:seed RAILS_ENV=test
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Edit budget**
-- [ ] **Edit Price of ingredient**
-- [ ] **Edit ingredients**
-- [ ] **Edit shopping list**
-- [ ] **Track cooking times**
+- [ ] **list categories**
+- [ ] **Create category**
+- [ ] **List transactions**
+- [ ] **create transactions**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,7 +159,7 @@ rails db:seed RAILS_ENV=test
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Rachelwebdev/recipe-app/issues).
+Feel free to check the [issues page](https://github.com/hakichris/Budget/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,6 +184,6 @@ If you like this project please give a⭐️ and share with your friends.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Rachelwebdev/recipe-app/blob/develop/LICENSE) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
