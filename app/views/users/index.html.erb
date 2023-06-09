@@ -1,0 +1,36 @@
+<% if user_signed_in? %> 
+<div class="container">
+ <div class="welcome"> Welcome, <%= @user.name %> </div> 
+ <% if @categories.empty? %>
+ <h2>Please add some category</h2>
+ <% else %>
+ <ul class="category-list">
+   <% @categories.each do |category|%>
+   <li class="category-list-items">
+     <%= link_to user_category_financial_transactions_path(current_user, category.id) do %>
+     <div class="category-items-details">
+     <p class="Image"><%= image_tag category.icon %></p>
+     <div class="time-description">
+       <div class="category_description">
+         <h2><%= category.name%></h2>
+         <p><%= category.total(category.id)%></p>
+        </div>
+        <p><%=category.created_at.strftime('%d %B %Y')%></p>
+        </div>
+     </div>
+     <% end %> 
+     <% end %>
+   </li>
+   <% end %> 
+ </ul>
+ <button class="page-btns">
+   <%= link_to 'Create New category', new_user_category_path(user_id:@user.id) %>
+</button>
+</div>
+<% else %>
+<div class="main_page container">
+<h1>Welcome, to your Budget Track </h1>
+<p class="main_parag">This is a budget App that helps you to track your budget, it registers your transactions. 
+if you like the app feature kindly give the project a star on <a href="https://github.com/hakichris"> GITHUB </a>, and follow us on <a href="https://linkedin.com/in/hakichris">LINKEDIN</a></p>
+  </div>
+<% end %>

@@ -23,7 +23,9 @@
 !/storage/.keep
 /tmp/storage/*
 !/tmp/storage/
-!/tmp/storage/.keep
+!/tmp/storage/.
+
+node_modules/
 
 /public/assets
 
