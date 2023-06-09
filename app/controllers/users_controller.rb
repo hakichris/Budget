@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  def show
+  def index
     @user = current_user
     @categories = Category.includes(:financial_transactions).all
   end
