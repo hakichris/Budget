@@ -1,4 +1,4 @@
-@media only screen and (max-width: 720px) {
+
   .light {
     background-color: #3778c2;
   }
@@ -269,4 +269,4 @@
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
   }
-}
+
