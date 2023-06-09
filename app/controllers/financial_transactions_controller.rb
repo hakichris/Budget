@@ -24,6 +24,13 @@ class FinancialTransactionsController < ApplicationController
     end
   end
 
+  def destroy
+    @financial_transaction = FinancialTransaction.find(params[:id])
+    @financial_transaction.destroy!
+    flash[:notice] = 'Transaction has been successfully deleted!'
+    redirect_to user_category_path(@financial_transaction.category_id)
+  end
+
   private
 
   def financial_transaction_params

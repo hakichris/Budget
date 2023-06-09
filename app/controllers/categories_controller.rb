@@ -23,6 +23,13 @@ class CategoriesController < ApplicationController
     @total = @cattransaction.sum(:amount)
   end
 
+  def destroy
+    @category = category.find(params[:id])
+    @category.destroy!
+    flash[:notice] = 'category has been successfully deleted!'
+    redirect_to user_categories_path
+  end
+
   private
 
   def category_params
