@@ -1,17 +1,17 @@
 
-  .body {
-    background-color: #50BBC0;
+  body {
+    background: #87e6eb;
   }
   
   
   .light {
-    background-color: #3778c2;
+    background-color: #404e5d;
   }
 
   .nav-link {
     padding: 0;
     color: white;
-    background-color: #3778c2;
+    background-color: #404e5d;
   }
 
   .navbar-light .navbar-brand {
@@ -22,7 +22,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f5f5f5;
     padding: 0;
   }
 
