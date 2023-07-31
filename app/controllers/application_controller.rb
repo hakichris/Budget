@@ -9,8 +9,7 @@ class ApplicationController < ActionController::Base
 
   protected
 
-  def after_sign_up_path_for(resource)
+  def after_sign_up_path_for(resource_or_scope)
     new_user_session_path
-    puts "i am already here"
   end
 end
